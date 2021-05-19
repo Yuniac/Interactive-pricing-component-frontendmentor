@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+
+<body>
+    <main>
+        <div class="intro">
+            <h1>Simple, traffic-based pricing</h1>
+            <p>Sign-up for our 30-day trial. No credit card required.</p>
+        </div>
+        <div class="card">
+            <div class="card-info">
+                <div class="card-title">
+                    <h2 id="h2">
+                        <span id="views-count">100k  PAGEVIEWS</span>
+                    </h2>
+                    <p class="monthly-price">
+                        <span>
+                            <span>$</span>
+                        <span id="monthly-price">16</span>
+                        </span>
+                        <span>&ThinSpace;</span>
+                        <span class="month">/ month</span></p>
+                    <input type="range" id="slider" min="1" max="5" step="1" value="3">
+                </div>
+                <div class="card-details">
+                    <p>
+                        <span>Monthly Billing</span>
+                    </p>
+                    <div class="input-container">
+                        <input type="checkbox" class="input" id="input" value="discount">
+                        <label for="input" class="input-label" aria-checked="true"></label>
+                    </div>
+                    <p>
+                        <span>Yearly Billing</span>
+                    </p>
+                    <span id="discount" class="discount"> 25% discount</span>
+                </div>
+            </div>
+            <hr>
+            <div class="card-footer">
+                <ul class="features">
+                    <li>Unlimited websites</li>
+                    <li>100% data ownership</li>
+                    <li>Email reports</li>
+                </ul>
+                <button>Start my trial</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/Yuniac">Yuniac</a>.
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
